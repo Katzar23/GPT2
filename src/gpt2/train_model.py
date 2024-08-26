@@ -149,5 +149,4 @@ def add_subparser(subparsers: argparse._SubParsersAction):
                        help='use gradient checkpointing in transformer layers')
     group.add_argument('--gpus', default=None, type=int,
                        help='number of gpu devices to use in training')
-
     parser.set_defaults(func=train_gpt2_model)
